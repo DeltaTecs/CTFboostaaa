@@ -1,0 +1,714 @@
+{
+  "recorded_at_utc": "2026-11-01T15:12:42.997956+00:00",
+  "assessment_scope": "local host only; no remote targets or provider API calls",
+  "source_pin": {
+    "repository": "https://github.com/0x4m4/hexstrike-ai",
+    "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+    "version": "6.0.0",
+    "sha256": {
+      "hexstrike_server.py": "590a31b5e2115331d8ef56abbd73880ebd98a1c66a64e8c8bc99a78c5907a675",
+      "hexstrike_mcp.py": "6274ad945e282ecd94c4ef58ba33f26b5ea79d1aec750af3594cdb118b31db2c"
+    }
+  },
+  "existing_endpoint": "http://127.0.0.1:8888",
+  "inventory": {
+    "os_release": "PRETTY_NAME=\"Kali GNU/Linux Rolling\"\nNAME=\"Kali GNU/Linux\"\nVERSION_ID=\"2026.3\"\nVERSION=\"2026.3\"\nVERSION_CODENAME=kali-rolling\nID=kali\nID_LIKE=debian\nHOME_URL=\"https://www.kali.org/\"\nSUPPORT_URL=\"https://forums.kali.org/\"\nBUG_REPORT_URL=\"https://bugs.kali.org/\"\nANSI_COLOR=\"1;31\"\n",
+    "kernel": "7.1.5+kali-amd64",
+    "python": "3.14.8 (main, Oct  1 2026, 19:55:55) [GCC 16.2.0]",
+    "python_executable": "/home/u/workspace/hexstrike/hexstrike-ai/hexstrike-env/bin/python",
+    "packages": {
+      "mcp": "1.30.0",
+      "fastmcp": "0.4.1",
+      "flask": "3.0.3",
+      "requests": "2.34.2",
+      "psutil": "5.9.8",
+      "httpx": "0.28.1",
+      "werkzeug": "3.1.9"
+    },
+    "docker": {
+      "status": "not_installed"
+    },
+    "compose": {
+      "status": "not_installed"
+    },
+    "hexstrike_revision": {
+      "returncode": 0,
+      "stdout": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "stderr": ""
+    },
+    "hexstrike_tracked_changes": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "network_addresses": {
+      "returncode": 0,
+      "stdout": "[{\"ifindex\":1,\"ifname\":\"lo\",\"flags\":[\"LOOPBACK\",\"UP\",\"LOWER_UP\"],\"mtu\":65536,\"qdisc\":\"noqueue\",\"operstate\":\"UNKNOWN\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"loopback\",\"address\":\"00:00:00:00:00:00\",\"broadcast\":\"00:00:00:00:00:00\",\"addr_info\":[{\"family\":\"inet\",\"local\":\"127.0.0.1\",\"prefixlen\":8,\"scope\":\"host\",\"label\":\"lo\",\"valid_life_time\":4294967295,\"preferred_life_time\":4294967295},{\"family\":\"inet6\",\"local\":\"::1\",\"prefixlen\":128,\"scope\":\"host\",\"noprefixroute\":true,\"valid_life_time\":4294967295,\"preferred_life_time\":4294967295}]},{\"ifindex\":2,\"ifname\":\"eth0\",\"flags\":[\"BROADCAST\",\"MULTICAST\",\"UP\",\"LOWER_UP\"],\"mtu\":1500,\"qdisc\":\"fq_codel\",\"operstate\":\"UP\",\"group\":\"default\",\"txqlen\":1000,\"link_type\":\"ether\",\"address\":\"08:00:27:43:de:d9\",\"broadcast\":\"ff:ff:ff:ff:ff:ff\",\"addr_info\":[{\"family\":\"inet\",\"local\":\"10.0.2.15\",\"prefixlen\":24,\"broadcast\":\"10.0.2.255\",\"scope\":\"global\",\"dynamic\":true,\"noprefixroute\":true,\"label\":\"eth0\",\"valid_life_time\":72259,\"preferred_life_time\":72259},{\"family\":\"inet6\",\"local\":\"fd17:625c:f037:2:5cec:31c4:9bf6:403f\",\"prefixlen\":64,\"scope\":\"global\",\"temporary\":true,\"dynamic\":true,\"valid_life_time\":85984,\"preferred_life_time\":13984},{\"family\":\"inet6\",\"local\":\"fd17:625c:f037:2:a00:27ff:fe43:ded9\",\"prefixlen\":64,\"scope\":\"global\",\"dynamic\":true,\"mngtmpaddr\":true,\"noprefixroute\":true,\"valid_life_time\":85984,\"preferred_life_time\":13984},{\"family\":\"inet6\",\"local\":\"fe80::a00:27ff:fe43:ded9\",\"prefixlen\":64,\"scope\":\"link\",\"noprefixroute\":true,\"valid_life_time\":4294967295,\"preferred_life_time\":4294967295}]}]",
+      "stderr": ""
+    },
+    "network_routes": {
+      "returncode": 0,
+      "stdout": "[{\"dst\":\"default\",\"gateway\":\"10.0.2.2\",\"dev\":\"eth0\",\"protocol\":\"dhcp\",\"prefsrc\":\"10.0.2.15\",\"metric\":100,\"flags\":[]},{\"dst\":\"10.0.2.0/24\",\"dev\":\"eth0\",\"protocol\":\"kernel\",\"scope\":\"link\",\"prefsrc\":\"10.0.2.15\",\"metric\":100,\"flags\":[]}]",
+      "stderr": ""
+    }
+  },
+  "providers": [
+    {
+      "provider": "openai",
+      "tool_calls": 1,
+      "round_trip": "passed",
+      "streaming": false,
+      "status": "fixture_passed",
+      "live_verified": false,
+      "assumption": "Live account compatibility assumed per user instruction"
+    },
+    {
+      "provider": "deepseek",
+      "tool_calls": 1,
+      "round_trip": "passed",
+      "streaming": false,
+      "status": "fixture_passed",
+      "live_verified": false,
+      "assumption": "Live account compatibility assumed per user instruction"
+    },
+    {
+      "provider": "alibaba",
+      "tool_calls": 1,
+      "round_trip": "passed",
+      "streaming": false,
+      "status": "fixture_passed",
+      "live_verified": false,
+      "assumption": "Live account compatibility assumed per user instruction"
+    }
+  ],
+  "checks": {
+    "catalog_discovery": "passed",
+    "lazy_before_start": true,
+    "concurrent_contexts": "passed",
+    "temporary_generated_cache_and_subprocesses": "passed",
+    "buffered_output_and_process_polling": "passed",
+    "running_child_cleanup": "passed"
+  },
+  "status": "local_checks_passed_live_credentials_assumed_container_networking_unverified",
+  "existing_health": {
+    "all_essential_tools_available": true,
+    "cache_stats": {
+      "evictions": 0,
+      "hit_rate": "52.5%",
+      "hits": 668,
+      "max_size": 1000,
+      "misses": 604,
+      "size": 74
+    },
+    "category_stats": {
+      "additional": {
+        "available": 10,
+        "total": 14
+      },
+      "api": {
+        "available": 1,
+        "total": 8
+      },
+      "binary": {
+        "available": 7,
+        "total": 13
+      },
+      "cloud": {
+        "available": 0,
+        "total": 10
+      },
+      "essential": {
+        "available": 8,
+        "total": 8
+      },
+      "exploitation": {
+        "available": 1,
+        "total": 3
+      },
+      "forensics": {
+        "available": 9,
+        "total": 16
+      },
+      "network": {
+        "available": 10,
+        "total": 10
+      },
+      "osint": {
+        "available": 7,
+        "total": 13
+      },
+      "password": {
+        "available": 4,
+        "total": 5
+      },
+      "vuln_scanning": {
+        "available": 2,
+        "total": 4
+      },
+      "web_security": {
+        "available": 11,
+        "total": 19
+      },
+      "wireless": {
+        "available": 4,
+        "total": 4
+      }
+    },
+    "message": "HexStrike AI Tools API Server is operational",
+    "status": "healthy",
+    "telemetry": {
+      "average_execution_time": "0.01s",
+      "commands_executed": 609,
+      "success_rate": "13.0%",
+      "system_metrics": {
+        "cpu_percent": 7.5,
+        "disk_usage": 67.6,
+        "memory_percent": 13.1,
+        "network_io": {
+          "bytes_recv": 2491522488,
+          "bytes_sent": 47871888,
+          "dropin": 0,
+          "dropout": 0,
+          "errin": 0,
+          "errout": 0,
+          "packets_recv": 1783927,
+          "packets_sent": 251770
+        }
+      },
+      "uptime_seconds": 704.6476633548737
+    },
+    "tools_status": {
+      "aircrack-ng": true,
+      "aireplay-ng": true,
+      "airmon-ng": true,
+      "airodump-ng": true,
+      "amass": true,
+      "anew": false,
+      "angr": true,
+      "api-schema-analyzer": false,
+      "arjun": true,
+      "arp-scan": true,
+      "autopsy": true,
+      "autorecon": true,
+      "binwalk": true,
+      "bulk-extractor": false,
+      "burpsuite": true,
+      "censys-cli": false,
+      "checkov": false,
+      "checksec": true,
+      "clair": false,
+      "curl": true,
+      "dalfox": true,
+      "dirb": true,
+      "dirsearch": true,
+      "dnsenum": true,
+      "docker-bench-security": false,
+      "dotdotpwn": false,
+      "enum4linux": true,
+      "enum4linux-ng": true,
+      "evil-winrm": true,
+      "exiftool": true,
+      "exploit-db": false,
+      "falco": false,
+      "feroxbuster": true,
+      "ffuf": true,
+      "fierce": true,
+      "file": true,
+      "foremost": true,
+      "gau": false,
+      "gdb": true,
+      "ghidra": true,
+      "gobuster": true,
+      "graphql-scanner": false,
+      "hakrawler": false,
+      "hash-identifier": true,
+      "hashcat": true,
+      "hashcat-utils": false,
+      "hashpump": false,
+      "have-i-been-pwned": false,
+      "httpie": false,
+      "httpx": true,
+      "hydra": true,
+      "insomnia": false,
+      "jaeles": false,
+      "john": true,
+      "jwt-analyzer": false,
+      "katana": true,
+      "kismet": true,
+      "kube-bench": false,
+      "kube-hunter": false,
+      "libc-database": false,
+      "maltego": false,
+      "masscan": true,
+      "medusa": true,
+      "metasploit": false,
+      "msfconsole": true,
+      "msfvenom": true,
+      "nbtscan": true,
+      "nikto": true,
+      "nmap": true,
+      "nuclei": true,
+      "nxc": true,
+      "objdump": true,
+      "one-gadget": false,
+      "ophcrack": true,
+      "outguess": false,
+      "paramspider": true,
+      "patator": true,
+      "photorec": true,
+      "postman": false,
+      "prowler": false,
+      "pwninit": false,
+      "pwntools": false,
+      "qsreplace": false,
+      "radare2": true,
+      "recon-ng": true,
+      "responder": true,
+      "ropgadget": false,
+      "ropper": false,
+      "rpcclient": true,
+      "rustscan": true,
+      "scalpel": true,
+      "scout-suite": false,
+      "searchsploit": true,
+      "sherlock": false,
+      "shodan-cli": false,
+      "sleuthkit": false,
+      "smbmap": true,
+      "social-analyzer": false,
+      "spiderfoot": true,
+      "sqlmap": true,
+      "steghide": true,
+      "stegsolve": false,
+      "strings": true,
+      "subfinder": true,
+      "tcpdump": true,
+      "terrascan": false,
+      "testdisk": true,
+      "theharvester": true,
+      "trivy": false,
+      "tshark": true,
+      "uro": false,
+      "vol": false,
+      "volatility": false,
+      "volatility3": false,
+      "wafw00f": true,
+      "waybackurls": false,
+      "wfuzz": true,
+      "wireshark": true,
+      "wpscan": true,
+      "x8": false,
+      "xsser": false,
+      "xxd": true,
+      "zaproxy": false,
+      "zsteg": false
+    },
+    "total_tools_available": 73,
+    "total_tools_count": 127,
+    "uptime": 705.6499302387238,
+    "version": "6.0.0"
+  },
+  "existing_mcp": {
+    "initialization": {
+      "meta": null,
+      "protocolVersion": "2025-11-25",
+      "capabilities": {
+        "experimental": {},
+        "logging": null,
+        "prompts": {
+          "listChanged": false
+        },
+        "resources": {
+          "subscribe": false,
+          "listChanged": false
+        },
+        "tools": {
+          "listChanged": false
+        },
+        "completions": null,
+        "tasks": null
+      },
+      "serverInfo": {
+        "name": "hexstrike-ai-mcp",
+        "title": null,
+        "version": "1.30.0",
+        "websiteUrl": null,
+        "icons": null
+      },
+      "instructions": null
+    },
+    "tool_count": 150,
+    "transport": "stdio MCP bridge -> HTTP execution API",
+    "identity": {
+      "cwd": "/home/u/workspace/hexstrike/hexstrike-ai",
+      "uid": 1000,
+      "python": "3.14.8 (main, Oct  1 2026, 19:55:55) [GCC 16.2.0]",
+      "pid": 136388,
+      "ppid": 136384
+    }
+  },
+  "stock_cache": {
+    "default_replays_cached_result": true,
+    "use_cache_false_is_fresh": true
+  },
+  "services": [
+    {
+      "pid": 136405,
+      "pgid": 136405,
+      "port": 44627,
+      "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/main",
+      "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/main/tmp",
+      "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "temporary_path_replacements": 27,
+      "cache_disabled": true,
+      "process_json_fixed": true,
+      "agent": "main",
+      "startup_seconds": 3.577,
+      "memory_kib": {
+        "VmRSS": 156656,
+        "Threads": 8,
+        "Pss": 126690,
+        "Private_Clean": 0,
+        "Private_Dirty": 123012
+      }
+    },
+    {
+      "pid": 137078,
+      "pgid": 137078,
+      "port": 43041,
+      "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-1",
+      "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-1/tmp",
+      "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "temporary_path_replacements": 27,
+      "cache_disabled": true,
+      "process_json_fixed": true,
+      "agent": "subagent-1",
+      "startup_seconds": 3.336,
+      "memory_kib": {
+        "VmRSS": 156772,
+        "Threads": 8,
+        "Pss": 126787,
+        "Private_Clean": 8,
+        "Private_Dirty": 123108
+      }
+    },
+    {
+      "pid": 137767,
+      "pgid": 137767,
+      "port": 41013,
+      "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-2",
+      "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-2/tmp",
+      "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "temporary_path_replacements": 27,
+      "cache_disabled": true,
+      "process_json_fixed": true,
+      "agent": "subagent-2",
+      "startup_seconds": 3.237,
+      "memory_kib": {
+        "VmRSS": 156492,
+        "Threads": 8,
+        "Pss": 126460,
+        "Private_Clean": 16,
+        "Private_Dirty": 122760
+      }
+    },
+    {
+      "pid": 138441,
+      "pgid": 138441,
+      "port": 37705,
+      "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-3",
+      "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-3/tmp",
+      "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "temporary_path_replacements": 27,
+      "cache_disabled": true,
+      "process_json_fixed": true,
+      "agent": "subagent-3",
+      "startup_seconds": 3.172,
+      "memory_kib": {
+        "VmRSS": 156652,
+        "Threads": 8,
+        "Pss": 126784,
+        "Private_Clean": 0,
+        "Private_Dirty": 123132
+      }
+    },
+    {
+      "pid": 139114,
+      "pgid": 139114,
+      "port": 37165,
+      "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-4",
+      "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-4/tmp",
+      "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "temporary_path_replacements": 27,
+      "cache_disabled": true,
+      "process_json_fixed": true,
+      "agent": "subagent-4",
+      "startup_seconds": 3.273,
+      "memory_kib": {
+        "VmRSS": 156636,
+        "Threads": 8,
+        "Pss": 126634,
+        "Private_Clean": 4,
+        "Private_Dirty": 122956
+      }
+    },
+    {
+      "pid": 139785,
+      "pgid": 139785,
+      "port": 34729,
+      "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-5",
+      "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-5/tmp",
+      "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "temporary_path_replacements": 27,
+      "cache_disabled": true,
+      "process_json_fixed": true,
+      "agent": "subagent-5",
+      "startup_seconds": 3.274,
+      "memory_kib": {
+        "VmRSS": 156836,
+        "Threads": 8,
+        "Pss": 126826,
+        "Private_Clean": 64,
+        "Private_Dirty": 123096
+      }
+    }
+  ],
+  "aggregate_rss_mib": 918.01,
+  "aggregate_pss_mib": 742.36,
+  "contexts": [
+    {
+      "initialization": {
+        "meta": null,
+        "protocolVersion": "2025-11-25",
+        "capabilities": {
+          "experimental": {},
+          "logging": null,
+          "prompts": {
+            "listChanged": false
+          },
+          "resources": {
+            "subscribe": false,
+            "listChanged": false
+          },
+          "tools": {
+            "listChanged": false
+          },
+          "completions": null,
+          "tasks": null
+        },
+        "serverInfo": {
+          "name": "hexstrike-ai-mcp",
+          "title": null,
+          "version": "1.30.0",
+          "websiteUrl": null,
+          "icons": null
+        },
+        "instructions": null
+      },
+      "execution": {
+        "agent": "main",
+        "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/main",
+        "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/main/tmp/phase0-xojgmfpu",
+        "cache": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/main/cache",
+        "pid": 143058,
+        "ppid": 143051,
+        "pgid": 136405,
+        "child": {
+          "pid": 143060,
+          "ppid": 143058,
+          "pgid": 136405,
+          "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/main"
+        },
+        "start": 1793545993.690544,
+        "end": 1793545994.715831
+      },
+      "generated_file": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/main/tmp/hexstrike_files/same-generated.txt",
+      "tools": {
+        "strings_extract": {
+          "execution_time": 0.006087779998779297,
+          "partial_results": false,
+          "return_code": 0,
+          "stderr": "",
+          "stdout": "phase0-local-fixture-main\n",
+          "success": true,
+          "timed_out": false,
+          "timestamp": "2026-11-01T10:13:14.819034"
+        },
+        "xxd_hexdump": {
+          "execution_time": 0.005487203598022461,
+          "partial_results": false,
+          "return_code": 0,
+          "stderr": "",
+          "stdout": "00000000: 7068 6173 6530 2d6c 6f63 616c 2d66 6978  phase0-local-fix\n00000010: 7475 7265 2d6d 6169 6e                   ture-main\n",
+          "success": true,
+          "timed_out": false,
+          "timestamp": "2026-11-01T10:13:14.836637"
+        },
+        "version_and_file": {
+          "execution_time": 0.07101559638977051,
+          "partial_results": false,
+          "return_code": 0,
+          "stderr": "",
+          "stdout": "Nmap version 7.991 ( https://nmap.org )\nPlatform: x86_64-pc-linux-gnu\nCompiled with: liblua-5.4.9 openssl-3.6.5 libssh2-1.11.1 libz-1.3.2 libpcre2-10.48 libpcap-1.11.0 nmap-libdnet-1.18.0 ipv6\nCompiled without:\nAvailable nsock engines: epoll poll select\nartifacts/sample.txt: ASCII text, with no line terminators\n",
+          "success": true,
+          "timed_out": false,
+          "timestamp": "2026-11-01T10:13:14.919594"
+        }
+      },
+      "cache_freshness": "passed"
+    },
+    {
+      "initialization": {
+        "meta": null,
+        "protocolVersion": "2025-11-25",
+        "capabilities": {
+          "experimental": {},
+          "logging": null,
+          "prompts": {
+            "listChanged": false
+          },
+          "resources": {
+            "subscribe": false,
+            "listChanged": false
+          },
+          "tools": {
+            "listChanged": false
+          },
+          "completions": null,
+          "tasks": null
+        },
+        "serverInfo": {
+          "name": "hexstrike-ai-mcp",
+          "title": null,
+          "version": "1.30.0",
+          "websiteUrl": null,
+          "icons": null
+        },
+        "instructions": null
+      },
+      "execution": {
+        "agent": "subagent-1",
+        "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-1",
+        "tmp": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-1/tmp/phase0-_roca8qj",
+        "cache": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-1/cache",
+        "pid": 143059,
+        "ppid": 143050,
+        "pgid": 137078,
+        "child": {
+          "pid": 143061,
+          "ppid": 143059,
+          "pgid": 137078,
+          "cwd": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-1"
+        },
+        "start": 1793545993.6969712,
+        "end": 1793545994.721972
+      },
+      "generated_file": "/home/u/workspace/CTFboostaaa/phase0-artifacts/phase0-2026-11-01-run3/subagent-1/tmp/hexstrike_files/same-generated.txt",
+      "tools": {
+        "strings_extract": {
+          "execution_time": 0.010852813720703125,
+          "partial_results": false,
+          "return_code": 0,
+          "stderr": "",
+          "stdout": "phase0-local-fixture-subagent-1\n",
+          "success": true,
+          "timed_out": false,
+          "timestamp": "2026-11-01T10:13:14.810207"
+        },
+        "xxd_hexdump": {
+          "execution_time": 0.0060651302337646484,
+          "partial_results": false,
+          "return_code": 0,
+          "stderr": "",
+          "stdout": "00000000: 7068 6173 6530 2d6c 6f63 616c 2d66 6978  phase0-local-fix\n00000010: 7475 7265 2d73 7562 6167 656e 742d 31    ture-subagent-1\n",
+          "success": true,
+          "timed_out": false,
+          "timestamp": "2026-11-01T10:13:14.829239"
+        },
+        "version_and_file": {
+          "execution_time": 0.07107281684875488,
+          "partial_results": false,
+          "return_code": 0,
+          "stderr": "",
+          "stdout": "Nmap version 7.991 ( https://nmap.org )\nPlatform: x86_64-pc-linux-gnu\nCompiled with: liblua-5.4.9 openssl-3.6.5 libssh2-1.11.1 libz-1.3.2 libpcre2-10.48 libpcap-1.11.0 nmap-libdnet-1.18.0 ipv6\nCompiled without:\nAvailable nsock engines: epoll poll select\nartifacts/sample.txt: ASCII text, with no line terminators\n",
+          "success": true,
+          "timed_out": false,
+          "timestamp": "2026-11-01T10:13:14.911358"
+        }
+      },
+      "cache_freshness": "passed"
+    }
+  ],
+  "buffering": {
+    "elapsed_seconds": 1.635,
+    "pending_after_early_stdout": true,
+    "mcp_progress_notifications": 0,
+    "output": "completion_only",
+    "process_polling": {
+      "active_processes": {
+        "144462": {
+          "bytes_processed": 0,
+          "command": "/home/u/workspace/hexstrike/hexstrike-ai/hexstrike-env/bin/python -c '\nimport json,os,pathlib,subprocess,sys,time\nchild = subprocess.Popen([sys.executable, '\"'\"'-c'\"'\"', '\"'\"'import time; time.sleep(1.5)'\"'\"'])\npathlib.Path('\"'\"'running.json'\"'\"').write_text(json.dumps({'\"'\"'pid'\"'\"':os.getpid(), '\"'\"'child_pid'\"'\"':child.pid, '\"'\"'pgid'\"'\"':os.getpgrp()}))\nprint('\"'\"'early-local-output'\"'\"', flush=True)\ntime.sleep(1.5)\nchild.wait()\nprint('\"'\"'late-local-output'\"'\"', flush=True)\n'",
+          "eta": 37389.99910855293,
+          "eta_formatted": "1867950.0s",
+          "last_output": "Running for 0.0s",
+          "pid": 144462,
+          "progress": 2.384185791015625e-08,
+          "runtime": 0.0008914470672607422,
+          "runtime_formatted": "0.0s",
+          "start_time": 1793545999.816851,
+          "status": "running"
+        }
+      },
+      "success": true,
+      "total_count": 1
+    },
+    "ownership": {
+      "pid": 144466,
+      "child_pid": 144467,
+      "pgid": 136405
+    }
+  },
+  "container_networking": {
+    "status": "unverified",
+    "reason": "Docker/CTF-VPN callback proof requires the deployed runtime; no remote target was contacted"
+  },
+  "cleanup": [
+    {
+      "agent": "main",
+      "service_stopped": true,
+      "observed_children_stopped": true,
+      "artifacts_retained": true
+    },
+    {
+      "agent": "subagent-1",
+      "service_stopped": true,
+      "observed_children_stopped": true,
+      "artifacts_retained": true
+    },
+    {
+      "agent": "subagent-2",
+      "service_stopped": true,
+      "observed_children_stopped": true,
+      "artifacts_retained": true
+    },
+    {
+      "agent": "subagent-3",
+      "service_stopped": true,
+      "observed_children_stopped": true,
+      "artifacts_retained": true
+    },
+    {
+      "agent": "subagent-4",
+      "service_stopped": true,
+      "observed_children_stopped": true,
+      "artifacts_retained": true
+    },
+    {
+      "agent": "subagent-5",
+      "service_stopped": true,
+      "observed_children_stopped": true,
+      "artifacts_retained": true
+    }
+  ]
+}
