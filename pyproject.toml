@@ -1,0 +1,6 @@
+[project]
+name = "ctf-harness-phase0"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "Local HexStrike integration proofs and provider protocol smoke tests"
+dependencies = ["mcp==1.30.0"]

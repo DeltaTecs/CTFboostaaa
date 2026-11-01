@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/0x4m4/hexstrike-ai",
+  "revision": "d689933ff579d839c676c82b231f8e98326c5f04",
+  "version": "6.0.0",
+  "sha256": {
+    "hexstrike_server.py": "590a31b5e2115331d8ef56abbd73880ebd98a1c66a64e8c8bc99a78c5907a675",
+    "hexstrike_mcp.py": "6274ad945e282ecd94c4ef58ba33f26b5ea79d1aec750af3594cdb118b31db2c"
+  }
+}
